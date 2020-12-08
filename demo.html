@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>console-error-button demo</title>
+</head>
+
+<style>
+  body {
+    background: #eee;
+    padding: 2rem 0;
+  }
+  .callBtn {
+    font-size: 120%;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: .3rem;
+    color: #e0e0e0;
+    background-color: dodgerblue;
+  }
+</style>
+
+<body>
+
+<h1>console-error-button demo</h1>
+
+<p>Displays a dismissable button in bottom left corner of window whenever
+  `console.error()` is called.</p>
+
+<button
+  class="callBtn"
+  onclick="console.error('just a test error, no worries');"
+>Call console.error()</button>
+
+<script src="./consoleErrBtn.js"></script>
+
+</body>
+
+</html>

@@ -8,13 +8,17 @@
   const btnErrAlert = document.createElement('button');
   btnErrAlert.style.cssText = `
       position: fixed;
-      top: calc(100vh - 40px);
-      left: 12px;
+      top: calc(100vh - 4px);
+      left: 2px;
       z-index: 1000;
       color: white;
+      padding: 0.8rem 0.5rem;
       background-color: red;
       border: 1px solid transparent;
-      border-radius: .25rem;
+      border-radius: .2rem;
+      opacity: 0.8;
+      transform: rotate(-90deg);
+      transform-origin: top left;
       display: none`;
   document.body.appendChild(btnErrAlert);
 
