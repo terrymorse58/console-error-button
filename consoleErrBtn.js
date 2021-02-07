@@ -6,19 +6,19 @@
 
   // create the "error" button and append to <body>
   const btnErrAlert = document.createElement('button');
+  btnErrAlert.title = "click to dismiss";
   btnErrAlert.style.cssText = `
       position: fixed;
-      top: calc(100vh - 4px);
-      left: 2px;
+      bottom: 0px;
+      left: 0px;
+      width: 100vw;
       z-index: 1000;
       color: white;
-      padding: 0.8rem 0.5rem;
+      font-size: 12px;
+      padding: 0.1rem 0;
       background-color: red;
       border: 1px solid transparent;
-      border-radius: .2rem;
-      opacity: 0.8;
-      transform: rotate(-90deg);
-      transform-origin: top left;
+      opacity: 0.6;
       display: none`;
   document.body.appendChild(btnErrAlert);
 
@@ -28,7 +28,9 @@
     const args = Array.from(arguments);
     vanillaConsoleError.apply(console, args);
     // increment error count, show "error" button
-    btnErrAlert.innerText = `${++errCount} console.error()`;
+    btnErrAlert.innerText = `${++errCount} console error${
+      errCount > 1 ? 's' : ''
+    }`;
     btnErrAlert.style.display = '';
   };
 

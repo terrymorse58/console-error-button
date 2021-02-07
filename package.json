@@ -1,7 +1,7 @@
 {
   "name": "console-error-button",
-  "version": "1.0.3",
-  "description": "devtool - display a button whenever `console.error()` is called",
+  "version": "1.1.0",
+  "description": "display a button whenever a console error occurs",
   "main": "consoleErrBtn.js",
   "scripts": {
     "test": "open __tests__/index.html"
