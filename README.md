@@ -6,7 +6,7 @@ Display a button on web page whenever `console.error()` is called.
 
 Because during development, it's nice to get notification whenever an error occurs, so you immediately can pop open the web inspector to see what the trouble is.
 
-![console-error-button demo](media/console-error-button.gif)
+![console-error-button demo](media/console-error-button-animated.gif)
 
 ## Usage
 
